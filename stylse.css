@@ -1,0 +1,26 @@
+.container {
+  width: 1130px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.new_event {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+.one_event {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.par {
+  margin-right: 40px;
+}
