@@ -52,7 +52,7 @@ addBtn.addEventListener("click", () => {
 
     for (let i = 0; i < arr.length; i++) {
       if (arr[i] == task.innerHTML) {
-        arr.splice(i,1);
+        arr.splice(i, 1);
       }
     }
     localStorage.setItem("tasks", JSON.stringify(arr));
@@ -122,16 +122,14 @@ load();
 let deleteBtns = document.querySelectorAll(".delete_btn");
 
 
-deleteBtns.forEach( e => e.addEventListener("click", () =>{
+deleteBtns.forEach(e => e.addEventListener("click", () => {
   e.parentNode.remove();
   let arr = JSON.parse(localStorage.getItem('tasks'));;
-  
+
   let deleteElem = e.previousSibling.innerHTML;
   let arrIndex = arr.indexOf(deleteElem);
-  arr.splice(arrIndex,1);
+  arr.splice(arrIndex, 1);
   console.log(arr);
   localStorage.setItem("tasks", JSON.stringify(arr));
 
 }))
-
-console.log(deleteBtns);
