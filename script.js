@@ -133,3 +133,5 @@ deleteBtns.forEach(e => e.addEventListener("click", () => {
   localStorage.setItem("tasks", JSON.stringify(arr));
 
 }))
+
+console.log(123);
